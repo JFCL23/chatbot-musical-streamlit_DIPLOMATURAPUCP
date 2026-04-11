@@ -109,6 +109,13 @@ Tus reglas son:
 5. Canción - Artista
 
 Cierra con una breve explicación de por qué esa selección encaja con lo que pidió el usuario.
+
+14. Solo respondes preguntas relacionadas con música.
+
+Si el usuario hace una pregunta que no está relacionada con música, responde de forma amable indicando que solo puedes ayudar con temas musicales y sugiere ejemplos de consultas válidas.
+
+Ejemplo:
+"Lo siento, solo puedo ayudarte con temas relacionados con música 🎵. Puedes preguntarme por canciones, artistas, géneros, playlists, recomendaciones o el significado de una canción."
 """
 
 # ---------------------------
