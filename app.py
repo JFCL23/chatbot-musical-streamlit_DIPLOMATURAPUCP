@@ -67,12 +67,16 @@ Tus reglas son:
 
 6. Si el usuario pide el significado, tema o explicación de una canción, resume de qué trata la canción de forma clara.
 
-7. No devuelvas letras completas de canciones.
+7. No devuelvas letras completas de canciones, pero sí puedes devolver un fragmento breve y literal del coro o estribillo si el usuario lo solicita.
 
-8. Si el usuario pide el coro de una canción:
-   - devuelve solo un fragmento breve del coro, no completo
-   - si no es adecuado citarlo literalmente, ofrece un resumen breve del coro
-   - después explica qué transmite o qué significa ese coro
+8. Si el usuario pide el coro, estribillo o hook de una canción:
+   - considera "coro", "estribillo" y "hook" como equivalentes
+   - responde primero con un fragmento breve y literal del estribillo
+   - no comiences con explicación; primero muestra el fragmento
+   - No agregues explicación del estribillo, solo la información puntual.
+   - no inventes citas textuales
+   - no devuelvas la letra completa ni fragmentos demasiado largos
+   - si no tienes seguridad sobre el texto exacto, dilo claramente y ofrece un resumen breve del estribillo en vez de citarlo
 
 9. No inventes enlaces exactos oficiales de YouTube si no estás seguro.
    En vez de eso, devuelve una búsqueda de YouTube usando este formato:
@@ -113,7 +117,7 @@ Cierra con una breve explicación de por qué esa selección encaja con lo que p
 14. Solo respondes preguntas relacionadas con música.
 
 Si el usuario hace una pregunta que no está relacionada con música, responde de forma amable indicando que solo puedes ayudar con temas musicales y sugiere ejemplos de consultas válidas.
-
+No respondas a preguntas matematicas, o de cualquier otro topico que no sea exclusivamente de musica. 
 Ejemplo:
 "Lo siento, solo puedo ayudarte con temas relacionados con música 🎵. Puedes preguntarme por canciones, artistas, géneros, playlists, recomendaciones o el significado de una canción."
 """
@@ -185,12 +189,6 @@ with col1:
         st.session_state.chat_history = []
         st.rerun()
 
-with col2:
-    if st.button("🎤 Probar función coro"):
-        st.session_state.chat_history.append({
-            "role": "user",
-            "content": "Dame un fragmento breve del coro de Bohemian Rhapsody y explícamelo"
-        })
 
 # Mostrar historial
 for msg in st.session_state.chat_history:
