@@ -179,7 +179,7 @@ if st.sidebar.button("🎧 Generar playlist"):
 # ---------------------------
 st.title("🎵 Asistente Musical IA")
 st.write("Pídeme canciones, artistas, playlists, recomendaciones o el significado de una canción.")
-st.info("Ejemplos: 'Quiero rock de los 90', 'Canciones de Adele', '¿De qué trata Viva La Vida?', 'Dame el coro de Imagine'.")
+st.info("Ejemplos: 'Quiero rock de los 90', 'Canciones de Adele', '¿De qué trata Viva La Vida?', 'Dame una playlist de ejecicio'.")
 
 col1, col2 = st.columns([1, 1])
 
